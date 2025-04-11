@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist | ASICS Germany</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-inter">
+    <!-- Header and Navigation -->
+    <div class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold">ASICS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="products.html" class="text-gray-700 hover:text-black">Men</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Women</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Kids</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sports</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sale</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#" class="p-2">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="wishlist.html" class="p-2 relative">
+                            <i class="fas fa-heart"></i>
+                            <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                        </a>
+                        <a href="#" class="p-2">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <a href="login.html" class="p-2">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 hover:bg-gray-100 rounded-full">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
+        <nav class="text-sm mb-8">
+            <ol class="list-none p-0 inline-flex">
+                <li class="flex items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+                    <svg class="w-3 h-3 mx-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                </li>
+                <li class="text-gray-800">My Wishlist</li>
+            </ol>
+        </nav>
+
+        <h1 class="text-3xl font-bold mb-8">My Wishlist</h1>
+
+        <!-- Wishlist Items -->
+        <div class="grid grid-cols-1 gap-6">
+            <!-- Wishlist Item 1 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 relative">
+                        <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" 
+                             alt="GEL-NIMBUS™ 25" 
+                             class="w-full h-full object-cover">
+                        <button class="absolute top-2 right-2 text-red-500 hover:text-red-600">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">GEL-NIMBUS™ 25</h3>
+                                <p class="text-gray-600 mb-4">Men's Running Shoes</p>
+                                <div class="flex items-center mb-4">
+                                    <span class="text-red-500 font-medium text-lg">€129.99</span>
+                                    <span class="text-gray-400 line-through ml-2">€159.99</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                Added on Apr 11, 2024
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <select class="border rounded-md px-3 py-2">
+                                <option>Select Size</option>
+                                <option>EU 40</option>
+                                <option>EU 41</option>
+                                <option>EU 42</option>
+                                <option>EU 43</option>
+                            </select>
+                            <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wishlist Item 2 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 relative">
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" 
+                             alt="GT-2000™ 11" 
+                             class="w-full h-full object-cover">
+                        <button class="absolute top-2 right-2 text-red-500 hover:text-red-600">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">GT-2000™ 11</h3>
+                                <p class="text-gray-600 mb-4">Men's Running Shoes</p>
+                                <div class="flex items-center mb-4">
+                                    <span class="font-medium text-lg">€139.99</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                Added on Apr 10, 2024
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <select class="border rounded-md px-3 py-2">
+                                <option>Select Size</option>
+                                <option>EU 40</option>
+                                <option>EU 41</option>
+                                <option>EU 42</option>
+                                <option>EU 43</option>
+                            </select>
+                            <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wishlist Item 3 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 relative">
+                        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" 
+                             alt="NOVABLAST™ 3" 
+                             class="w-full h-full object-cover">
+                        <button class="absolute top-2 right-2 text-red-500 hover:text-red-600">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">NOVABLAST™ 3</h3>
+                                <p class="text-gray-600 mb-4">Men's Running Shoes</p>
+                                <div class="flex items-center mb-4">
+                                    <span class="font-medium text-lg">€149.99</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                Added on Apr 9, 2024
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <select class="border rounded-md px-3 py-2">
+                                <option>Select Size</option>
+                                <option>EU 40</option>
+                                <option>EU 41</option>
+                                <option>EU 42</option>
+                                <option>EU 43</option>
+                            </select>
+                            <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State (Hidden when items exist) -->
+        <div class="hidden text-center py-16">
+            <i class="fas fa-heart text-6xl text-gray-300 mb-4"></i>
+            <h2 class="text-2xl font-semibold mb-2">Your wishlist is empty</h2>
+            <p class="text-gray-600 mb-6">Browse our products and add your favorites to the wishlist</p>
+            <a href="products.html" class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition inline-block">
+                Shop Now
+            </a>
+        </div>
+
+        <!-- Recommended Products -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold mb-6">You May Also Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Recommended Product 1 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg" 
+                             alt="Related Product 1" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">GEL-KAYANO™ 29</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">€179.99</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Product 2 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" 
+                             alt="Related Product 2" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">GEL-CUMULUS™ 24</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">€159.99</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Product 3 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" 
+                             alt="Related Product 3" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">GT-2000™ 11</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">€139.99</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Product 4 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" 
+                             alt="Related Product 4" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">NOVABLAST™ 3</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">€149.99</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About ASICS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Our Story</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Returns</a></li>
+                        <li><a href="#" class="hover:underline">Shipping</a></li>
+                        <li><a href="#" class="hover:underline">Order Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 ASICS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global JavaScript -->
+    <script src="global.js"></script>
+</body>
+</html>
