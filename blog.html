@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ASICS Germany</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Header and Navigation -->
+    <div class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold">ASICS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="products.html" class="text-gray-700 hover:text-black">Men</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Women</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Kids</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sports</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sale</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#" class="p-2">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="wishlist.html" class="p-2 relative">
+                            <i class="fas fa-heart"></i>
+                            <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                        </a>
+                        <a href="#" class="p-2">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <a href="login.html" class="p-2">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 hover:bg-gray-100 rounded-full">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
+        <nav class="text-sm mb-8">
+            <ol class="list-none p-0 inline-flex">
+                <li class="flex items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+                    <svg class="w-3 h-3 mx-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                </li>
+                <li class="text-gray-800">Blog</li>
+            </ol>
+        </nav>
+
+        <!-- Featured Article -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+            <div class="relative h-96">
+                <img src="https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg" 
+                     alt="Marathon Training" 
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <div class="p-8 text-white">
+                        <div class="mb-4">
+                            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">Featured</span>
+                        </div>
+                        <h1 class="text-4xl font-bold mb-4">Ultimate Marathon Training Guide</h1>
+                        <p class="text-lg mb-4">Master your marathon preparation with our comprehensive guide covering training, nutrition, and recovery.</p>
+                        <div class="flex items-center text-sm">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                                 alt="Author" 
+                                 class="w-10 h-10 rounded-full object-cover mr-4">
+                            <div>
+                                <p class="font-medium">John Runner</p>
+                                <p>April 11, 2024 · 15 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Categories -->
+        <div class="flex flex-wrap gap-4 mb-8">
+            <button class="bg-black text-white px-6 py-2 rounded-full">All</button>
+            <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100">Running</button>
+            <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100">Training</button>
+            <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100">Nutrition</button>
+            <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100">Gear Reviews</button>
+            <button class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100">Success Stories</button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/1654498/pexels-photo-1654498.jpeg" 
+                         alt="Running Technique" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Training</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">5 Essential Running Techniques for Beginners</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Master the fundamentals of proper running form with these beginner-friendly techniques that will improve your efficiency and prevent injuries.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 10, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>8 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" 
+                         alt="Nutrition Guide" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Nutrition</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">Pre and Post Run Nutrition Guide</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Optimize your running performance with the right nutrition strategy. Learn what to eat before and after your runs for maximum energy and recovery.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 9, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>10 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" 
+                         alt="Shoe Guide" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">Gear Review</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">How to Choose Your Perfect Running Shoe</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Find your ideal running companion with our comprehensive guide to selecting the right running shoes based on your foot type and running style.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 8, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>12 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/3621183/pexels-photo-3621183.jpeg" 
+                         alt="Success Story" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Success Story</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">From Couch to Marathon: Sarah's Journey</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Be inspired by Sarah's incredible transformation from a complete beginner to completing her first marathon in under 4 hours.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 7, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>15 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/3621185/pexels-photo-3621185.jpeg" 
+                         alt="Training Plan" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Training</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">10K Training Plan for Intermediate Runners</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Take your running to the next level with our 8-week training plan designed to help you achieve a new 10K personal best.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 6, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>10 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden group">
+                <div class="relative h-48">
+                    <img src="https://images.pexels.com/photos/3621192/pexels-photo-3621192.jpeg" 
+                         alt="Recovery Tips" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">Recovery</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2 group-hover:text-blue-600">
+                        <a href="#">Essential Recovery Tips for Runners</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-2">Learn the importance of proper recovery and discover effective techniques to help your body bounce back stronger after tough training sessions.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>April 5, 2024</span>
+                        <span class="mx-2">·</span>
+                        <span>9 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="inline-flex rounded-md shadow">
+                <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    Previous
+                </a>
+                <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-black">
+                    1
+                </a>
+                <a href="#" class="px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    2
+                </a>
+                <a href="#" class="px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    3
+                </a>
+                <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    Next
+                </a>
+            </nav>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="mt-16 bg-black text-white rounded-lg p-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-gray-300 mb-6">Subscribe to our newsletter for the latest running tips, training advice, and gear reviews.</p>
+            <form class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" 
+                           placeholder="Enter your email" 
+                           class="flex-1 px-4 py-2 rounded-full text-black">
+                    <button type="submit" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About ASICS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Our Story</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Returns</a></li>
+                        <li><a href="#" class="hover:underline">Shipping</a></li>
+                        <li><a href="#" class="hover:underline">Order Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 ASICS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global JavaScript -->
+    <script src="global.js"></script>
+</body>
+</html>
