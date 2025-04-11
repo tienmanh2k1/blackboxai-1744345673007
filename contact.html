@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ASICS Germany</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-inter">
+    <!-- Header and Navigation -->
+    <div class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold">ASICS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="products.html" class="text-gray-700 hover:text-black">Men</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Women</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Kids</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sports</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sale</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            
+            <!-- Contact Information -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Customer Service</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-phone-alt mt-1"></i>
+                            <div>
+                                <p class="font-medium">Phone Support</p>
+                                <p class="text-gray-600">+49 123 456 789</p>
+                                <p class="text-sm text-gray-500">Mon-Fri: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <div>
+                                <p class="font-medium">Email Support</p>
+                                <p class="text-gray-600">support@asics.de</p>
+                                <p class="text-sm text-gray-500">24/7 Response Time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Store Location</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <div>
+                                <p class="font-medium">ASICS Store Berlin</p>
+                                <p class="text-gray-600">Friedrichstraße 123</p>
+                                <p class="text-gray-600">10117 Berlin, Germany</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <div>
+                                <p class="font-medium">Opening Hours</p>
+                                <p class="text-gray-600">Mon-Sat: 10:00 - 20:00</p>
+                                <p class="text-gray-600">Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-6">Send us a Message</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring focus:ring-black focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring focus:ring-black focus:ring-opacity-50">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring focus:ring-black focus:ring-opacity-50">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="6" required 
+                                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring focus:ring-black focus:ring-opacity-50"></textarea>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="privacy" name="privacy" required 
+                               class="mt-1 rounded border-gray-300 text-black focus:ring-black">
+                        <label for="privacy" class="ml-2 text-sm text-gray-600">
+                            I have read and agree to the Privacy Policy and Terms of Service
+                        </label>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition duration-200">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About ASICS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Our Story</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Returns</a></li>
+                        <li><a href="#" class="hover:underline">Shipping</a></li>
+                        <li><a href="#" class="hover:underline">Order Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 ASICS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
