@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ASICS Germany</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-inter">
+    <!-- Header and Navigation -->
+    <div class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold">ASICS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="products.html" class="text-gray-700 hover:text-black">Men</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Women</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Kids</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sports</a>
+                    <a href="products.html" class="text-gray-700 hover:text-black">Sale</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="p-2">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="p-2">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                    <a href="login.html" class="p-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">Login</h2>
+        <form class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" 
+                       id="email" 
+                       name="email"
+                       autocomplete="email"
+                       required 
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-black focus:border-black">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" 
+                       id="password" 
+                       name="password"
+                       autocomplete="current-password"
+                       required 
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-black focus:border-black">
+            </div>
+            <button type="submit" class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition duration-200">Log In</button>
+            <p class="mt-4 text-sm text-center">
+                <a href="#" class="text-black hover:underline">Forgot Password?</a>
+            </p>
+            <p class="mt-2 text-sm text-center">
+                <span>Don't have an account? </span>
+                <a href="#" class="text-black hover:underline">Create one</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About ASICS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Our Story</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Returns</a></li>
+                        <li><a href="#" class="hover:underline">Shipping</a></li>
+                        <li><a href="#" class="hover:underline">Order Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 ASICS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
